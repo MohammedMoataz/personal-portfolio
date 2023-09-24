@@ -2,22 +2,22 @@ import React, { useContext } from 'react'
 import {
     Stack,
     Box,
-    // ButtonBase,
-    // Typography
+    ButtonBase,
+    Typography
 } from '@mui/material'
-// import Lottie from 'react-lottie'
+import Lottie from 'react-lottie'
 
-// import gmailLottie from './../../assets/lotties/gmail.json'
-// import linkedinLottie from './../../assets/lotties/linkedin.json'
-// import facebookLottie from './../../assets/lotties/facebook.json'
-// import githubLottie from './../../assets/lotties/github.json'
+import gmailLottie from './../../assets/lotties/gmail.json'
+import linkedinLottie from './../../assets/lotties/linkedin.json'
+import facebookLottie from './../../assets/lotties/facebook.json'
+import githubLottie from './../../assets/lotties/github.json'
 
 import img from "./mohammed.svg"
-// import { ThemeContext } from './../../context/context/context.js'
-// import { ColorBorderButton, ColorButton } from './../../utils/button.js'
+import { ThemeContext } from './../../context/context/context.js'
+import { ColorBorderButton, ColorButton } from './../../utils/button.js'
 
 const Home = () => {
-    // const { state } = useContext(ThemeContext)
+    const { state } = useContext(ThemeContext)
 
     return (
         <Box>
@@ -27,7 +27,7 @@ const Home = () => {
                 justifyContent="space-between"
                 alignItems="center"
             >
-                {/* <Stack
+                <Stack
                     direction={{ xs: 'column' }}
                     spacing={{ xs: 1, sm: 2, md: 4 }}
                     justifyContent="space-evenly"
@@ -163,7 +163,7 @@ const Home = () => {
                             Contact
                         </ColorBorderButton>
                     </Stack>
-                </Stack> */}
+                </Stack>
                 <Box
                     sx={{
                         width: { xs: "75%", md: "45%" },

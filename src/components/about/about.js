@@ -6,9 +6,9 @@ import {
     ListItem,
     ListItemText
 } from '@mui/material'
-// import Lottie from 'react-lottie'
+import Lottie from 'react-lottie'
 
-// import aboutLottie from "./../../assets/lotties/about.json"
+import aboutLottie from "./../../assets/lotties/about.json"
 import { ThemeContext } from './../../context/context/context.js'
 import Header from './../../utils/header.js'
 
@@ -24,7 +24,7 @@ const About = () => {
                 justifyContent="space-around"
                 alignItems="center"
             >
-                {/* <Box
+                <Box
                     sx={{
                         width: { xs: "50%", md: "30%" },
                     }}
@@ -39,7 +39,7 @@ const About = () => {
                             },
                         }}
                     />
-                </Box> */}
+                </Box>
                 <Box
                     sx={{
                         width: { xs: "75%", md: "45%" },
