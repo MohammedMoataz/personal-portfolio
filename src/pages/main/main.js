@@ -12,7 +12,7 @@ import About from './../../components/about/about.js'
 // import Services from './../../components/services/services.js'
 // import Skills from './../../components/skills/skills.js'
 // import Projects from './../../components/projects/projects.js'
-// import Contact from './../../components/contact/contact.js'
+import Contact from './../../components/contact/contact.js'
 // import Footer from './../../components/footer/footer.js'
 import { ThemeContext } from './../../context/context/context.js'
 import Divider from './../../utils/divider.js'
@@ -46,11 +46,11 @@ const Main = () => {
 
                     <About />
                     <div id='Skills'></div>
-                    <Toolbar />
+                    {/*  <Toolbar />
                     <Divider />
                     <Toolbar />
 
-                    {/* <Skills />
+                   <Skills />
                     <div id='Services'></div>
                     <Toolbar />
                     <Divider />
@@ -62,14 +62,14 @@ const Main = () => {
                     <Divider />
 
                     <Toolbar />
-                    <Projects />
+                    <Projects />*/}
                     <div id='Contact'></div>
                     <Toolbar />
                     <Divider />
                     <Toolbar />
 
                     <Contact />
-                    <Toolbar /> */}
+                    <Toolbar />
                 </Container>
             </Box>
             {/* <Footer /> */}
