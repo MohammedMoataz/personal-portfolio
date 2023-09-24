@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Dart",
+        "image": "dart",
+        "color": "#41C4FF"
+    },
+    {
+        "name": "Flutter",
+        "image": "flutter",
+        "color": "#47C5FB"
+    },
+    {
+        "name": "Firebase",
+        "image": "firebase",
+        "color": "#FCCA3F"
+    },
+    {
+        "name": "Jave",
+        "image": "java",
+        "color": "#5382A1"
+    },
+    {
+        "name": "SQLite",
+        "image": "sqlite",
+        "color": "#58AFE2"
+    },
+    {
+        "name": "Bootstrap",
+        "image": "bootstrap",
+        "color": "#8312FA"
+    },
+    {
+        "name": "JaveScript",
+        "image": "javascript",
+        "color": "#F7DF1E"
+    },
+    {
+        "name": "JQuery",
+        "image": "jquery",
+        "color": "#1769AA"
+    },
+    {
+        "name": "Material UI",
+        "image": "materialui",
+        "color": "#00B0FF"
+    },
+    {
+        "name": "Next JS",
+        "image": "next",
+        "color": "#111111"
+    },
+    {
+        "name": "React JS",
+        "image": "react",
+        "color": "#61DAFB"
+    },
+    {
+        "name": "Redux",
+        "image": "redux",
+        "color": "#764ABC"
+    },
+    {
+        "name": "TypeScript",
+        "image": "typescript",
+        "color": "#1769AA"
+    },
+    {
+        "name": "SASS",
+        "image": "sass",
+        "color": "#CD6799"
+    },
+    {
+        "name": "Express JS",
+        "image": "express",
+        "color": "#111111"
+    },
+    {
+        "name": "Mongo DB",
+        "image": "mongodb",
+        "color": "#58AA50"
+    },
+    {
+        "name": "SQL Server",
+        "image": "mssql",
+        "color": "#111111"
+    },
+    {
+        "name": "MySQL",
+        "image": "mysql",
+        "color": "#00758F"
+    },
+    {
+        "name": "Nest JS",
+        "image": "nest",
+        "color": "#EA2845"
+    },
+    {
+        "name": "Node JS",
+        "image": "node",
+        "color": "#64B547"
+    },
+    {
+        "name": "PostgreSQL",
+        "image": "postgresql",
+        "color": "#336791"
+    },
+    {
+        "name": "Java Spring",
+        "image": "spring",
+        "color": "#77BC1F"
+    },
+    {
+        "name": "Docker",
+        "image": "docker",
+        "color": "#2395EC"
+    },
+    {
+        "name": "Git",
+        "image": "git",
+        "color": "#DE4C36"
+    }
+]
