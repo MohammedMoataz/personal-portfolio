@@ -12,7 +12,7 @@ import linkedinLottie from './../../assets/lotties/linkedin.json'
 import facebookLottie from './../../assets/lotties/facebook.json'
 import githubLottie from './../../assets/lotties/github.json'
 
-import img from "./mohammed.svg"
+import img from "./../../assets/svg/mohammed.svg"
 import { ThemeContext } from './../../context/context/context.js'
 import { ColorBorderButton, ColorButton } from './../../utils/button.js'
 

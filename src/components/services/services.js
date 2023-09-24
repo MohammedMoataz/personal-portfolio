@@ -8,11 +8,11 @@ import Header from './../../utils/header.js'
 import Card from './../../utils/card.js'
 import { ThemeContext } from './../../context/context/context.js'
 
-import backend from './services/backend.svg'
-import frontend from './services/frontend.svg'
-import mobile from './services/mobile.svg'
-import blockchain from './services/blockchain.svg'
-import database from './services/database.svg'
+import backend from "./../../assets/svg/services/backend.svg"
+import frontend from "./../../assets/svg/services/frontend.svg"
+import mobile from "./../../assets/svg/services/mobile.svg"
+import blockchain from "./../../assets/svg/services/blockchain.svg"
+import database from "./../../assets/svg/services/database.svg"
 
 const Services = () => {
     const { state } = useContext(ThemeContext)

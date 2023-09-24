@@ -18,7 +18,7 @@ import {
 import MenuIcon from '@mui/icons-material/Menu'
 
 import { ThemeContext } from '././../../context/context/context.js'
-import logo from './logo.svg'
+import logo from "./../../assets/svg/logo.svg"
 
 const drawerWidth = 240
 const navItems = ['Home', 'About', 'Skills', 'Services', /*'Projects',*/ 'Contact']
