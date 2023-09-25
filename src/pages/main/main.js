@@ -26,7 +26,6 @@ const Main = () => {
             <Box
                 sx={{
                     backgroundColor: state.color.dark,
-                    fontFamily: `${state.typography.fontFamily}`,
                 }}
             >
                 <Container>

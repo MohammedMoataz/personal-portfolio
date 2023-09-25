@@ -1,0 +1,21 @@
+{
+    "title": "Software Engineer",
+    "name": "Mohammed Moataz",
+    "gmail": {
+        "title": "Gmail",
+        "url": "mailto:imohammedmoataz@gmail.com"
+    },
+    "linkedin": {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/mohammed-moataz/"
+    },
+    "facebook": {
+        "title": "Facebook",
+        "url": "https://www.facebook.com/mo.moatazz/"
+    },
+    "github": {
+        "title": "GihHub",
+        "url": "https://github.com/MohammedMoataz"
+    },
+    "resume": "https://docs.google.com/document/d/1ZVKtWKO7fh6csbRjYcLXriAlIA9lcXPnO6Z9buhObXA/edit?usp=sharing"
+}

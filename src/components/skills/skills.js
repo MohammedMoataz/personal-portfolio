@@ -24,7 +24,7 @@ const Skills = () => {
                 <Marquee
                     className="marquee"
                     gradient={false}
-                    speed={125}
+                    speed={150}
                     pauseOnHover={true}
                     pauseOnClick={true}
                     delay={0}
@@ -39,7 +39,7 @@ const Skills = () => {
                             alignItems='center'
                             spacing={{ xs: 1, sm: 2, md: 4 }}
                             sx={{
-                                backgroundColor: state.color.light,
+                                backgroundColor: 'transparent',
                                 borderRadius: "1rem",
                                 boxShadow: `0px 0px 5px 1px ${skill.color}`,
                                 border: `1px solid ${skill.color}`,
@@ -47,6 +47,7 @@ const Skills = () => {
                                 width: '10rem',
                                 height: '10rem',
                                 padding: '1rem',
+                                my: 3,
                             }}
                         >
                             <Box
@@ -54,8 +55,8 @@ const Skills = () => {
                                 alt={skill.name}
                                 src={skillImage(skill.image)}
                                 sx={{
-                                    width: '4.2rem',
-                                    height: '4.2rem',
+                                    maxWidth: '8rem',
+                                    height: '4rem',
                                 }}
                             />
                             <Typography

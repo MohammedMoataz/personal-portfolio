@@ -6,7 +6,7 @@ import {
     CardContent
 } from '@mui/material'
 
-const card = (props) => <Card
+const CustomCard = (props) => <Card
     sx={{
         width: { xs: 1, md: 1 / 5 },
         border: `1px solid ${props.color}`,
@@ -16,7 +16,7 @@ const card = (props) => <Card
         '&:hover': {
             border: `1px solid #368F80`,
             boxShadow: { xs: '0px 0px 5px 1px #368F80', md: '0px 0px 10px 1px #368F80' },
-        }
+        },
     }}
 >
     <CardContent>
@@ -24,15 +24,14 @@ const card = (props) => <Card
             direction={{ xs: 'row-reverse', md: 'column' }}
             justifyContent={{ xs: 'space-between', md: 'center' }}
             alignItems='center'
-            spacing={{ xs: 5, sm: 2, md: 4 }}
+            spacing={{ xs: 15, md: 5 }}
         >
             <Box
                 component='img'
                 src={props.src}
                 alt={props.alt}
                 sx={{
-                    width: '6rem',
-                    height: '6rem',
+                    width: { xs: '4rem', md: '5rem' },
                 }}
             />
             <Typography
@@ -49,4 +48,4 @@ const card = (props) => <Card
     </CardContent>
 </Card >
 
-export default card
+export default CustomCard

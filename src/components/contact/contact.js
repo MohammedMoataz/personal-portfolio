@@ -2,7 +2,6 @@ import React, { useContext, useState } from 'react'
 import {
     Box,
     Stack,
-    TextField,
     Typography
 } from '@mui/material'
 import emailjs from '@emailjs/browser'
@@ -11,6 +10,8 @@ import Header from './../../utils/header.js'
 import { ThemeContext } from './../../context/context/context.js'
 import { ColorButton } from './../../utils/button.js'
 import Textarea from './../../utils/teaxtarea.js'
+import CustomTextField from '../../utils/textfield.js'
+import data from '../../data/contact.json'
 
 const Contact = () => {
     const { state } = useContext(ThemeContext)
@@ -23,13 +24,13 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        emailjs.send("service_xd021bp", "template_q0zd5sj", {
+        emailjs.send(data.serviceID, data.templateID, {
             subject: subject,
             first_name: firstName,
             last_name: lastName,
             from_email: email,
             message: message,
-        }, 'hKz5juDDjUToa43gj')
+        }, data.publicKey)
             .then(alert("Email was sent successfully"))
             .catch(err => alert(err.message))
     }
@@ -44,7 +45,9 @@ const Contact = () => {
                 <Box
                     sx={{
                         width: '100%',
-                        backgroundColor: state.color.light,
+                        backgroundColor: 'transparent',
+                        border: `1px solid ${state.color.primary}`,
+                        boxShadow: `0px 0px 5px 1px ${state.color.primary}`,
                         borderRadius: 5,
                         padding: 5,
                     }}>
@@ -52,7 +55,7 @@ const Contact = () => {
                         variant="h6"
                         gutterBottom
                         sx={{
-                            color: state.color.primary,
+                            color: state.color.secondary,
                             fontWeight: 700,
                             fontSize: { xs: 20, sm: 24, md: 26, lg: 28 },
                             mb: 4,
@@ -62,8 +65,14 @@ const Contact = () => {
                         GET IN TOUCH
                     </Typography>
                     <form onSubmit={handleSubmit}>
-                        <Stack spacing={4} direction="row" sx={{ mb: 4 }}>
-                            <TextField
+                        <Stack
+                            spacing={4}
+                            direction="row"
+                            sx={{
+                                mb: 4,
+                            }}
+                        >
+                            <CustomTextField
                                 type="text"
                                 variant='standard'
                                 label="First Name"
@@ -72,7 +81,7 @@ const Contact = () => {
                                 fullWidth
                                 required
                             />
-                            <TextField
+                            <CustomTextField
                                 type="text"
                                 variant='standard'
                                 label="Last Name"
@@ -82,7 +91,7 @@ const Contact = () => {
                                 required
                             />
                         </Stack>
-                        <TextField
+                        <CustomTextField
                             type="email"
                             variant='standard'
                             label="Email"
@@ -92,7 +101,7 @@ const Contact = () => {
                             required
                             sx={{ mb: 4 }}
                         />
-                        <TextField
+                        <CustomTextField
                             type="text"
                             variant='standard'
                             label="Subject"

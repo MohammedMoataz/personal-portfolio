@@ -10,6 +10,11 @@
         "color": "#47C5FB"
     },
     {
+        "name": "React Native",
+        "image": "react_native",
+        "color": "#176AAB"
+    },
+    {
         "name": "Firebase",
         "image": "firebase",
         "color": "#FCCA3F"
@@ -23,6 +28,11 @@
         "name": "SQLite",
         "image": "sqlite",
         "color": "#58AFE2"
+    },
+    {
+        "name": "WordPress",
+        "image": "wordpress",
+        "color": "#454342"
     },
     {
         "name": "Bootstrap",
@@ -58,6 +68,11 @@
         "name": "Redux",
         "image": "redux",
         "color": "#764ABC"
+    },
+    {
+        "name": "Yarn",
+        "image": "yarn",
+        "color": "#2C8EBA"
     },
     {
         "name": "TypeScript",

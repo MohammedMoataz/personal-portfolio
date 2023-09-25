@@ -1,18 +1,18 @@
 import React, { useContext } from 'react'
 import {
     Box,
-    ButtonBase,
     Stack,
     Typography
 } from '@mui/material'
-import Lottie from 'react-lottie'
+
+import { ThemeContext } from './../../context/context/context.js'
 
 import gmailLottie from './../../assets/lotties/gmail.json'
 import linkedinLottie from './../../assets/lotties/linkedin.json'
 import facebookLottie from './../../assets/lotties/facebook.json'
 import githubLottie from './../../assets/lotties/github.dark.json'
-
-import { ThemeContext } from './../../context/context/context.js'
+import data from '../../data/portfolio.json'
+import CustomButtonBase from '../../utils/buttonbase.js'
 
 const Footer = () => {
     const { state } = useContext(ThemeContext)
@@ -42,78 +42,26 @@ const Footer = () => {
                         width: { xs: '40%', sm: '30%', md: '25%', lg: '18%' },
                     }}
                 >
-                    <ButtonBase
-                        href='mailto:imohammedmoataz@gmail.com'
-                        target='_blank'
-                        sx={{ width: '25%' }}
-                    >
-                        <Lottie
-                            options={{
-                                loop: true,
-                                autoplay: true,
-                                animationData: gmailLottie,
-                                rendererSettings: {
-                                    preserveAspectRatio: "xMidYMid slice",
-                                },
-                            }}
-                            width={"100%"}
-                            title='Gmail'
-                        />
-                    </ButtonBase>
-                    <ButtonBase
-                        href='https://www.linkedin.com/in/mohammed-moataz/'
-                        target='_blank'
-                        sx={{ width: '25%' }}
-                    >
-                        <Lottie
-                            options={{
-                                loop: true,
-                                autoplay: true,
-                                animationData: linkedinLottie,
-                                rendererSettings: {
-                                    preserveAspectRatio: "xMidYMid slice",
-                                },
-                            }}
-                            width={"100%"}
-                            title='LinkedIn'
-                        />
-                    </ButtonBase>
-                    <ButtonBase
-                        href='https://www.facebook.com/mo.moatazz/'
-                        target='_blank'
-                        sx={{ width: '25%' }}
-                    >
-                        <Lottie
-                            options={{
-                                loop: true,
-                                autoplay: true,
-                                animationData: facebookLottie,
-                                rendererSettings: {
-                                    preserveAspectRatio: "xMidYMid slice",
-                                },
-                            }}
-                            width={"100%"}
-                            title='Facebook'
-                        />
-                    </ButtonBase>
-                    <ButtonBase
-                        href='https://github.com/MohammedMoataz'
-                        target='_blank'
-                        sx={{ width: '25%' }}
-                    >
-                        <Lottie
-                            options={{
-                                loop: true,
-                                autoplay: true,
-                                animationData: githubLottie,
-                                rendererSettings: {
-                                    preserveAspectRatio: "xMidYMid slice",
-                                },
-                            }}
-                            width={"100%"}
-                            title='GihHub'
-                        />
-                    </ButtonBase>
+                    <CustomButtonBase
+                        href={data.gmail.url}
+                        animationData={gmailLottie}
+                        title={data.gmail.title}
+                    />
+                    <CustomButtonBase
+                        href={data.linkedin.url}
+                        animationData={linkedinLottie}
+                        title={data.linkedin.title}
+                    />
+                    <CustomButtonBase
+                        href={data.facebook.url}
+                        animationData={facebookLottie}
+                        title={data.facebook.title}
+                    />
+                    <CustomButtonBase
+                        href={data.github.url}
+                        animationData={githubLottie}
+                        title={data.github.title}
+                    />
                 </Stack>
             </Stack>
         </Box >

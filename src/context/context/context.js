@@ -15,20 +15,6 @@ export const AppProvider = (props) => {
             light: '#FAFAFA',
             dark: '#1E1E1E',
         },
-        typography: {
-            fontFamily: [
-                '-apple-system',
-                'BlinkMacSystemFont',
-                '"Segoe UI"',
-                'Roboto',
-                '"Helvetica Neue"',
-                'Arial',
-                'sans-serif',
-                '"Apple Color Emoji"',
-                '"Segoe UI Emoji"',
-                '"Segoe UI Symbol"',
-            ].join(','),
-        },
     }
     const [state, dispatch] = useReducer(themeReducer, themeInitialState)
 

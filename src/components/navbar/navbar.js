@@ -18,10 +18,10 @@ import {
 import MenuIcon from '@mui/icons-material/Menu'
 
 import { ThemeContext } from '././../../context/context/context.js'
-import logo from "./../../assets/svg/logo.svg"
+import logo from "./../../assets/webp/logo.webp"
+import data from '../../data/navbar.json'
 
 const drawerWidth = 240
-const navItems = ['Home', 'About', 'Skills', 'Services', /*'Projects',*/ 'Contact']
 
 const DrawerAppBar = (props) => {
     const { window } = props
@@ -52,8 +52,8 @@ const DrawerAppBar = (props) => {
                     backgroundColor: state.color.primary,
                 }}
             />            <List>
-                {navItems.map((item) => (
-                    <ListItem key={item} disablePadding>
+                {data.navItems.map((item, index) => (
+                    <ListItem key={index} disablePadding>
                         <ListItemButton href={`#${item}`} sx={{ textAlign: 'center' }}>
                             <ListItemText primary={item} />
                         </ListItemButton>
@@ -95,8 +95,8 @@ const DrawerAppBar = (props) => {
                         />
                     </Box>
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-                        {navItems.map((item) => (
-                            <Button key={item} href={`#${item}`} sx={{ color: state.color.light }}>
+                        {data.navItems.map((item, index) => (
+                            <Button key={index} href={`#${item}`} sx={{ color: state.color.light }}>
                                 {item}
                             </Button>
                         ))}

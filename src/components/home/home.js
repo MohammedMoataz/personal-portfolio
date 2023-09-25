@@ -2,19 +2,19 @@ import React, { useContext } from 'react'
 import {
     Stack,
     Box,
-    ButtonBase,
     Typography
 } from '@mui/material'
-import Lottie from 'react-lottie'
+
+import { ThemeContext } from './../../context/context/context.js'
+import { ColorBorderButton, ColorButton } from './../../utils/button.js'
+import CustomButtonBase from '../../utils/buttonbase.js'
 
 import gmailLottie from './../../assets/lotties/gmail.json'
 import linkedinLottie from './../../assets/lotties/linkedin.json'
 import facebookLottie from './../../assets/lotties/facebook.json'
 import githubLottie from './../../assets/lotties/github.json'
-
-import img from "./../../assets/svg/mohammed.svg"
-import { ThemeContext } from './../../context/context/context.js'
-import { ColorBorderButton, ColorButton } from './../../utils/button.js'
+import img from "./../../assets/webp/mohammed.webp"
+import data from '../../data/portfolio.json'
 
 const Home = () => {
     const { state } = useContext(ThemeContext)
@@ -44,7 +44,7 @@ const Home = () => {
                             fontSize: { xs: 24, sm: 28, md: 32, lg: 36 },
                         }}
                     >
-                        Software Engineer
+                        {data.title}
                     </Typography>
                     <Typography
                         variant="h1"
@@ -55,7 +55,7 @@ const Home = () => {
                             fontSize: { xs: 24, sm: 36, md: 44, lg: 50 },
                         }}
                     >
-                        Mohammed Moataz
+                        {data.name}
                     </Typography>
                     <Stack
                         direction={{ xs: 'row' }}
@@ -67,78 +67,26 @@ const Home = () => {
                             py: "2%"
                         }}
                     >
-                        <ButtonBase
-                            href='mailto:imohammedmoataz@gmail.com'
-                            target='_blank'
-                            sx={{ width: '25%' }}
-                        >
-                            <Lottie
-                                options={{
-                                    loop: true,
-                                    autoplay: true,
-                                    animationData: gmailLottie,
-                                    rendererSettings: {
-                                        preserveAspectRatio: "xMidYMid slice",
-                                    },
-                                }}
-                                width={"100%"}
-                                title='Gmail'
-                            />
-                        </ButtonBase>
-                        <ButtonBase
-                            href='https://www.linkedin.com/in/mohammed-moataz/'
-                            target='_blank'
-                            sx={{ width: '25%' }}
-                        >
-                            <Lottie
-                                options={{
-                                    loop: true,
-                                    autoplay: true,
-                                    animationData: linkedinLottie,
-                                    rendererSettings: {
-                                        preserveAspectRatio: "xMidYMid slice",
-                                    },
-                                }}
-                                width={"100%"}
-                                title='LinkedIn'
-                            />
-                        </ButtonBase>
-                        <ButtonBase
-                            href='https://www.facebook.com/mo.moatazz/'
-                            target='_blank'
-                            sx={{ width: '25%' }}
-                        >
-                            <Lottie
-                                options={{
-                                    loop: true,
-                                    autoplay: true,
-                                    animationData: facebookLottie,
-                                    rendererSettings: {
-                                        preserveAspectRatio: "xMidYMid slice",
-                                    },
-                                }}
-                                width={"100%"}
-                                title='Facebook'
-                            />
-                        </ButtonBase>
-                        <ButtonBase
-                            href='https://github.com/MohammedMoataz'
-                            target='_blank'
-                            sx={{ width: '25%' }}
-                        >
-                            <Lottie
-                                options={{
-                                    loop: true,
-                                    autoplay: true,
-                                    animationData: githubLottie,
-                                    rendererSettings: {
-                                        preserveAspectRatio: "xMidYMid slice",
-                                    },
-                                }}
-                                width={"100%"}
-                                title='GihHub'
-                            />
-                        </ButtonBase>
+                        <CustomButtonBase
+                            href={data.gmail.url}
+                            animationData={gmailLottie}
+                            title={data.gmail.title}
+                        />
+                        <CustomButtonBase
+                            href={data.linkedin.url}
+                            animationData={linkedinLottie}
+                            title={data.linkedin.title}
+                        />
+                        <CustomButtonBase
+                            href={data.facebook.url}
+                            animationData={facebookLottie}
+                            title={data.facebook.title}
+                        />
+                        <CustomButtonBase
+                            href={data.github.url}
+                            animationData={githubLottie}
+                            title={data.github.title}
+                        />
                     </Stack>
                     <Stack
                         sx={{ py: "2%" }}
@@ -150,7 +98,7 @@ const Home = () => {
                         <ColorButton
                             variant="contained"
                             size="large"
-                            href='https://docs.google.com/document/d/1ZVKtWKO7fh6csbRjYcLXriAlIA9lcXPnO6Z9buhObXA/edit?usp=sharing'
+                            href={data.resume}
                             target="_blank"
                         >
                             Resume

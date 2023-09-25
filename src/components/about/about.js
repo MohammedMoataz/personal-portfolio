@@ -8,9 +8,10 @@ import {
 } from '@mui/material'
 import Lottie from 'react-lottie'
 
-import aboutLottie from "./../../assets/lotties/about.json"
 import { ThemeContext } from './../../context/context/context.js'
 import Header from './../../utils/header.js'
+import aboutLottie from "./../../assets/lotties/about.json"
+import data from '../../data/about.json'
 
 const About = () => {
     const { state } = useContext(ThemeContext)
@@ -47,37 +48,18 @@ const About = () => {
                     }}
                 >
                     <List>
-                        <ListItem
-                            sx={{
-                                color: state.color.light,
-                                py: { md: "3%" }
-                            }}
-                        >
-                            <ListItemText
-                                primary="Resourceful software engineer with both front-end and back-end development experience."
-                            />
-                        </ListItem>
-                        <ListItem
+                        {data.data.map((text, index) => <ListItem
+                            key={index}
                             sx={{
                                 color: state.color.light,
                                 py: { md: "3%" }
                             }}>
-                            <ListItemText
-                                primary="Smart and consistently educated designer of user interactions on sound and user-friendly websites and databases."
-                            />
+                            <ListItemText primary={text} />
                         </ListItem>
-                        <ListItem
-                            sx={{
-                                color: state.color.light,
-                                py: { md: "3%" }
-                            }}>
-                            <ListItemText
-                                primary="Proven troubleshooting with a solid grounding in data-driven concepts and applications."
-                            />
-                        </ListItem>
+                        )}
                     </List>
                 </Box>
-            </Stack>
+            </Stack >
         </Box >
     )
 }

@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material"
 
-const header = props => <Typography
+const CustomHeader = props => <Typography
     variant="h2"
     gutterBottom
     sx={{
@@ -13,4 +13,4 @@ const header = props => <Typography
     {props.title}
 </Typography>
 
-export default header
+export default CustomHeader
