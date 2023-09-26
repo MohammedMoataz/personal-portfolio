@@ -5,7 +5,7 @@ import {
     Typography
 } from '@mui/material'
 
-import { ThemeContext } from './../../context/context/context.js'
+import { AppContext } from './../../context/context/context.js'
 import { ColorBorderButton, ColorButton } from './../../utils/button.js'
 import CustomButtonBase from '../../utils/buttonbase.js'
 
@@ -17,7 +17,7 @@ import img from "./../../assets/webp/mohammed.webp"
 import data from '../../data/portfolio.json'
 
 const Home = () => {
-    const { state } = useContext(ThemeContext)
+    const { state } = useContext(AppContext)
 
     return (
         <Box>

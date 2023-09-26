@@ -17,7 +17,7 @@ import {
 } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 
-import { ThemeContext } from '././../../context/context/context.js'
+import { AppContext } from '././../../context/context/context.js'
 import logo from "./../../assets/webp/logo.webp"
 import data from '../../data/navbar.json'
 
@@ -26,7 +26,7 @@ const drawerWidth = 240
 const DrawerAppBar = (props) => {
     const { window } = props
     const [mobileOpen, setMobileOpen] = useState(false)
-    const { state } = useContext(ThemeContext)
+    const { state } = useContext(AppContext)
 
     const handleDrawerToggle = () => {
         setMobileOpen((prevState) => !prevState)

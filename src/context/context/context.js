@@ -1,12 +1,11 @@
 import React, { createContext, useReducer } from "react"
 
-import themeReducer from "./../reducers/themeReducer.js"
+import appReducer from "./../reducers/appReducer.js"
 
-export const ThemeContext = createContext()
+export const AppContext = createContext()
 
 export const AppProvider = (props) => {
-    const themeInitialState = {
-        theme: 'dark',
+    const appInitialState = {
         color: {
             primary: '#40718D',
             secondary: '#6286A1',
@@ -16,11 +15,12 @@ export const AppProvider = (props) => {
             dark: '#1E1E1E',
         },
     }
-    const [state, dispatch] = useReducer(themeReducer, themeInitialState)
+
+    const [state, dispatch] = useReducer(appReducer, appInitialState)
 
     return (
-        <ThemeContext.Provider value={{ state: state, dispatch: dispatch }}>
+        <AppContext.Provider value={{ state: state, dispatch: dispatch }}>
             {props.children}
-        </ThemeContext.Provider>
+        </AppContext.Provider>
     )
 }

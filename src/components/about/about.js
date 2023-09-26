@@ -8,13 +8,13 @@ import {
 } from '@mui/material'
 import Lottie from 'react-lottie'
 
-import { ThemeContext } from './../../context/context/context.js'
+import { AppContext } from './../../context/context/context.js'
 import Header from './../../utils/header.js'
 import aboutLottie from "./../../assets/lotties/about.json"
 import data from '../../data/about.json'
 
 const About = () => {
-    const { state } = useContext(ThemeContext)
+    const { state } = useContext(AppContext)
 
     return (
         <Box>

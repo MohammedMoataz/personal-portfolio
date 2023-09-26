@@ -7,14 +7,14 @@ import {
 import emailjs from '@emailjs/browser'
 
 import Header from './../../utils/header.js'
-import { ThemeContext } from './../../context/context/context.js'
+import { AppContext } from './../../context/context/context.js'
 import { ColorButton } from './../../utils/button.js'
 import Textarea from './../../utils/teaxtarea.js'
 import CustomTextField from '../../utils/textfield.js'
 import data from '../../data/contact.json'
 
 const Contact = () => {
-    const { state } = useContext(ThemeContext)
+    const { state } = useContext(AppContext)
     const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
     const [email, setEmail] = useState('')
@@ -52,9 +52,10 @@ const Contact = () => {
                         padding: 5,
                     }}>
                     <Typography
-                        variant="h6"
+                        variant="span"
                         gutterBottom
                         sx={{
+                            display: 'block',
                             color: state.color.secondary,
                             fontWeight: 700,
                             fontSize: { xs: 20, sm: 24, md: 26, lg: 28 },

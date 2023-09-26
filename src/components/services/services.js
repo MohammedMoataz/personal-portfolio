@@ -6,7 +6,7 @@ import {
 
 import Header from './../../utils/header.js'
 import Card from './../../utils/card.js'
-import { ThemeContext } from './../../context/context/context.js'
+import { AppContext } from './../../context/context/context.js'
 
 import backend from "./../../assets/webp/services/backend.webp"
 import frontend from "./../../assets/webp/services/frontend.webp"
@@ -15,7 +15,7 @@ import blockchain from "./../../assets/webp/services/blockchain.webp"
 import database from "./../../assets/webp/services/database.webp"
 
 const Services = () => {
-    const { state } = useContext(ThemeContext)
+    const { state } = useContext(AppContext)
 
     return (
         <Box>

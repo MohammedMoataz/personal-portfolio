@@ -5,7 +5,7 @@ import {
     Typography
 } from '@mui/material'
 
-import { ThemeContext } from './../../context/context/context.js'
+import { AppContext } from './../../context/context/context.js'
 
 import gmailLottie from './../../assets/lotties/gmail.json'
 import linkedinLottie from './../../assets/lotties/linkedin.json'
@@ -15,7 +15,7 @@ import data from '../../data/portfolio.json'
 import CustomButtonBase from '../../utils/buttonbase.js'
 
 const Footer = () => {
-    const { state } = useContext(ThemeContext)
+    const { state } = useContext(AppContext)
 
     return (
         <Box>

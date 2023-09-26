@@ -14,20 +14,17 @@ import Skills from './../../components/skills/skills.js'
 // import Projects from './../../components/projects/projects.js'
 import Contact from './../../components/contact/contact.js'
 import Footer from './../../components/footer/footer.js'
-import { ThemeContext } from './../../context/context/context.js'
+import { AppContext } from './../../context/context/context.js'
+// import Chat from './../../components/chat/chat.js'
 import Divider from './../../utils/divider.js'
 
 const Main = () => {
-    const { state } = useContext(ThemeContext)
+    const { state } = useContext(AppContext)
 
     return (
         <React.Fragment>
             <CssBaseline />
-            <Box
-                sx={{
-                    backgroundColor: state.color.dark,
-                }}
-            >
+            <Box sx={{ backgroundColor: state.color.dark }}>
                 <Container>
                     <ResponsiveAppBar />
                     <Toolbar />
@@ -69,6 +66,7 @@ const Main = () => {
                     <Contact />
                     <Toolbar />
                 </Container>
+                {/* <Chat /> */}
             </Box>
             <Footer />
         </React.Fragment>
