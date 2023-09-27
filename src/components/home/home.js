@@ -6,8 +6,9 @@ import {
 } from '@mui/material'
 
 import { AppContext } from './../../context/context/context.js'
-import { ColorBorderButton, ColorButton } from './../../utils/button.js'
+import { ColorBorderButton } from './../../utils/button.js'
 import CustomButtonBase from '../../utils/buttonbase.js'
+import CustomizedMenus from '../../utils/dropdown.js'
 
 import gmailLottie from './../../assets/lotties/gmail.json'
 import linkedinLottie from './../../assets/lotties/linkedin.json'
@@ -95,14 +96,7 @@ const Home = () => {
                         justifyContent="flex-start"
                         alignItems="center"
                     >
-                        <ColorButton
-                            variant="contained"
-                            size="large"
-                            href={data.resume}
-                            target="_blank"
-                        >
-                            Resume
-                        </ColorButton>
+                        <CustomizedMenus />
                         <ColorBorderButton
                             variant="outlined"
                             size="large"

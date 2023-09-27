@@ -1,26 +1,32 @@
-import React, { useContext } from "react"
-import { Avatar, Fab } from "@mui/material"
+import React, { useState, useContext } from "react"
+import Fab from "@mui/material/Fab"
+import { ArrowUpward } from "@mui/icons-material"
 
 import { AppContext } from "./../context/context/context.js"
-import logo from "./../assets/webp/logo.webp"
 
-const FloatingActionButton = (props) => {
+const FloatingActionButton = () => {
     const { state } = useContext(AppContext)
+    const [visible, setVisible] = useState(true)
+
+    const toggleVisible = () =>
+        document.documentElement.scrollTop > 300
+            ? setVisible(true)
+            : setVisible(false)
+    window.addEventListener('scroll', toggleVisible)
 
     return <Fab
         aria-label="chat"
         sx={{
+            position: "fixed",
+            bottom: 50,
+            right: 50,
             backgroundColor: state.color.primary,
-            "&:hover": {
-                backgroundColor: state.color.teal,
-            }
+            display: visible ? 'inline-flex' : 'none',
+            "&:hover": { backgroundColor: state.color.teal }
         }}
-        onClick={props.handleClick}
+        onClick={() => window.scrollTo(0, 0)}
     >
-        <Avatar
-            src={logo}
-            alt='Mohammed'
-        />
+        <ArrowUpward sx={{ color: '#FAFAFA' }} />
     </Fab >
 }
 
