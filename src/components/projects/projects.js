@@ -171,6 +171,7 @@ const Projects = () => {
                                             component='img'
                                             src={project.thumbnail}
                                             alt={project.title}
+                                            width={{ xs: '90%' }}
                                             maxHeight={300}
                                         />
                                     </Box>
