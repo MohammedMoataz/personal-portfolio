@@ -11,7 +11,7 @@ const CustomCard = (props) => <Card
         width: { xs: 1, md: 1 / 5 },
         border: `1px solid ${props.color}`,
         borderRadius: "1rem",
-        backgroundColor: '#1E1E1E',
+        bgcolor: '#1E1E1E',
         boxShadow: { xs: '0px 0px 5px 1px #6286A1', md: '0px 0px 10px 1px #6286A1' },
         '&:hover': {
             border: `1px solid #368F80`,

@@ -9,8 +9,9 @@ import {
 import ResponsiveAppBar from "./../../components/navbar/navbar.js"
 import Home from './../../components/home/home.js'
 import About from './../../components/about/about.js'
-import Services from './../../components/services/services.js'
 import Skills from './../../components/skills/skills.js'
+import Services from './../../components/services/services.js'
+import Projects from './../../components/projects/projects.js'
 import Contact from './../../components/contact/contact.js'
 import Footer from './../../components/footer/footer.js'
 import { AppContext } from './../../context/context/context.js'
@@ -23,7 +24,7 @@ const Main = () => {
     return (
         <React.Fragment>
             <CssBaseline />
-            <Box sx={{ backgroundColor: state.color.dark }}>
+            <Box sx={{ bgcolor: state.color.dark }}>
                 <Container>
                     <ResponsiveAppBar />
                     <Toolbar />
@@ -51,6 +52,12 @@ const Main = () => {
                     <Divider />
                     <Toolbar />
                     <Services />
+
+                    <div id='Projects'></div>
+                    <Toolbar />
+                    <Divider />
+                    <Toolbar />
+                    <Projects />
 
                     <div id='Contact'></div>
                     <Toolbar />

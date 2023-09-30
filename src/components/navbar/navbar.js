@@ -49,7 +49,7 @@ const DrawerAppBar = (props) => {
             </Box>
             <Divider
                 sx={{
-                    backgroundColor: state.color.primary,
+                    bgcolor: state.color.primary,
                 }}
             />            <List>
                 {data.navItems.map((item, index) => (
@@ -71,7 +71,7 @@ const DrawerAppBar = (props) => {
             <AppBar
                 component="nav"
                 sx={{
-                    backgroundColor: '#1E1E1EE9',
+                    bgcolor: '#1E1E1EE9',
                     boxShadow: `0px 0px 15px 1px ${state.color.primary}`,
                     py: '0.75%',
                 }}
@@ -118,7 +118,7 @@ const DrawerAppBar = (props) => {
                             boxSizing: 'border-box',
                             width: drawerWidth,
                             color: state.color.light,
-                            backgroundColor: state.color.dark,
+                            bgcolor: state.color.dark,
                             boxShadow: `0px 0px 15px 1px ${state.color.primary}`,
                         },
                     }}

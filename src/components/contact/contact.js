@@ -45,7 +45,7 @@ const Contact = () => {
                 <Box
                     sx={{
                         width: '100%',
-                        backgroundColor: 'transparent',
+                        bgcolor: 'transparent',
                         border: `1px solid ${state.color.primary}`,
                         boxShadow: `0px 0px 5px 1px ${state.color.primary}`,
                         borderRadius: 5,

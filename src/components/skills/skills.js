@@ -39,7 +39,7 @@ const Skills = () => {
                             alignItems='center'
                             spacing={{ xs: 1, sm: 2, md: 4 }}
                             sx={{
-                                backgroundColor: 'transparent',
+                                bgcolor: 'transparent',
                                 borderRadius: "1rem",
                                 boxShadow: `0px 0px 5px 1px ${skill.color}`,
                                 border: `1px solid ${skill.color}`,

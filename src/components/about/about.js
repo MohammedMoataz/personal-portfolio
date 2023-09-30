@@ -52,7 +52,7 @@ const About = () => {
                             key={index}
                             sx={{
                                 color: state.color.light,
-                                py: { md: "3%" }
+                                py: { md: "2%" }
                             }}>
                             <ListItemText primary={text} />
                         </ListItem>

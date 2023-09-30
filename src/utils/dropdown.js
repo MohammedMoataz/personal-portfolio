@@ -1,10 +1,14 @@
 import React, { useState } from 'react'
-import styled from '@mui/material/styles/styled'
-import { Box, Menu, MenuItem, Typography } from '@mui/material'
 import {
-    Download,
-    Link
-} from '@mui/icons-material'
+    Box,
+    Menu,
+    MenuItem,
+    Typography
+} from '@mui/material'
+import LaunchIcon from '@mui/icons-material/Launch'
+import Download from '@mui/icons-material/Download'
+
+import styled from '@mui/material/styles/styled'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 
 import { ColorButton } from './button.js'
@@ -39,14 +43,14 @@ const StyledMenu = styled((props) => (
         '& .MuiMenuItem-root': {
             '& .MuiSvgIcon-root': {
                 fontSize: 18,
-                color: '#1e1e1e',
+                color: '#FAFAFA',
                 marginRight: 2,
             },
         },
     },
 }))
 
-export default function CustomizedMenus() {
+const CustomizedMenus = () => {
     const [anchorEl, setAnchorEl] = useState(null)
     const open = Boolean(anchorEl)
     const handleClick = (event) => setAnchorEl(event.currentTarget)
@@ -76,9 +80,9 @@ export default function CustomizedMenus() {
                     href='https://docs.google.com/document/d/1ZVKtWKO7fh6csbRjYcLXriAlIA9lcXPnO6Z9buhObXA/edit?usp=sharing'
                     target="_blank"
                     disableRipple
-                    sx={{ '&:hover': { backgroundColor: '#368F80' } }}
+                    sx={{ '&:hover': { bgcolor: '#368F80' } }}
                 >
-                    <Link />
+                    <LaunchIcon />
                     <Typography ml={1}>Visit (.docx)</Typography>
                 </MenuItem>
                 <MenuItem
@@ -88,7 +92,7 @@ export default function CustomizedMenus() {
                     target='_blank'
                     rel='noreferrer'
                     disableRipple
-                    sx={{ '&:hover': { backgroundColor: '#368F80' } }}
+                    sx={{ '&:hover': { bgcolor: '#368F80' } }}
                 >
                     <Download />
                     <Typography ml={1}>Download (.pdf)</Typography>
@@ -97,3 +101,5 @@ export default function CustomizedMenus() {
         </Box>
     )
 }
+
+export default CustomizedMenus

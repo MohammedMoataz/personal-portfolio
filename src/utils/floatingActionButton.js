@@ -6,7 +6,7 @@ import { AppContext } from "./../context/context/context.js"
 
 const FloatingActionButton = () => {
     const { state } = useContext(AppContext)
-    const [visible, setVisible] = useState(true)
+    const [visible, setVisible] = useState(false)
 
     const toggleVisible = () =>
         document.documentElement.scrollTop > 300
@@ -20,9 +20,9 @@ const FloatingActionButton = () => {
             position: "fixed",
             bottom: 50,
             right: 50,
-            backgroundColor: state.color.primary,
+            bgcolor: state.color.primary,
             display: visible ? 'inline-flex' : 'none',
-            "&:hover": { backgroundColor: state.color.teal }
+            "&:hover": { bgcolor: state.color.teal }
         }}
         onClick={() => window.scrollTo(0, 0)}
     >

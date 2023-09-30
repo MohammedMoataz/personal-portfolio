@@ -9,7 +9,7 @@ export const AppProvider = (props) => {
         color: {
             primary: '#40718D',
             secondary: '#6286A1',
-            stone: '#173653',
+            cold: '#A2C6F1',
             teal: '#368F80',
             light: '#FAFAFA',
             dark: '#1E1E1E',
