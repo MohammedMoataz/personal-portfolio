@@ -29,7 +29,7 @@ const Skills = () => {
                     pauseOnClick={true}
                     delay={0}
                     play={true}
-                    direction="right"
+                    direction="left"
                 >
                     {data.map((skill, index) => (
                         <Stack

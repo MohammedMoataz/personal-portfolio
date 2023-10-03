@@ -16,7 +16,6 @@ import redux from './../../assets/webp/frontend/redux.webp'
 import sass from './../../assets/webp/frontend/sass.webp'
 import typescript from './../../assets/webp/frontend/typescript.webp'
 import wordpress from './../../assets/webp/frontend/wordpress.webp'
-import yarn from './../../assets/webp/frontend/yarn.webp'
 import materialui from './../../assets/webp/frontend/materialui.webp'
 
 // Backend
@@ -28,6 +27,14 @@ import nest from './../../assets/webp/backend/nest.webp'
 import node from './../../assets/webp/backend/node.webp'
 import postgresql from './../../assets/webp/backend/postgresql.webp'
 import spring from './../../assets/webp/backend/spring.webp'
+import laravel from './../../assets/webp/backend/laravel.webp'
+
+// BlockChain
+import ethereum from './../../assets/webp/blockchain/ethereum.webp'
+import ganache from './../../assets/webp/blockchain/ganache.webp'
+import truffle from './../../assets/webp/blockchain/truffle.webp'
+import solidity from './../../assets/webp/blockchain/solidity.webp'
+import web3js from './../../assets/webp/blockchain/web3js.webp'
 
 // Others
 import docker from './../../assets/webp/others/docker.webp'
@@ -53,7 +60,7 @@ export const skills = {
     sass,
     typescript,
     wordpress,
-    yarn,
+    laravel,
 
     // Backend
     express,
@@ -64,6 +71,13 @@ export const skills = {
     node,
     postgresql,
     spring,
+
+    // BlockChain
+    ethereum,
+    ganache,
+    truffle,
+    solidity,
+    web3js,
 
     // Others
     docker,

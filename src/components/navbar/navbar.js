@@ -1,5 +1,4 @@
 import React, { useContext, useState } from 'react'
-import PropTypes from 'prop-types'
 import {
     Avatar,
     AppBar,
@@ -51,7 +50,8 @@ const DrawerAppBar = (props) => {
                 sx={{
                     bgcolor: state.color.primary,
                 }}
-            />            <List>
+            />
+            <List>
                 {data.navItems.map((item, index) => (
                     <ListItem key={index} disablePadding>
                         <ListItemButton href={`#${item}`} sx={{ textAlign: 'center' }}>
@@ -128,14 +128,6 @@ const DrawerAppBar = (props) => {
             </nav>
         </Box>
     )
-}
-
-DrawerAppBar.propTypes = {
-    /**
-     * Injected by the documentation to work in an iframe.
-     * You won't need it on your project.
-     */
-    window: PropTypes.func,
 }
 
 export default DrawerAppBar

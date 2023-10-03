@@ -1,8 +1,13 @@
 [
     {
+        "name": "Java",
+        "image": "java",
+        "color": "#5382A1"
+    },
+    {
         "name": "Dart",
         "image": "dart",
-        "color": "#41C4FF"
+        "color": "#055A9D"
     },
     {
         "name": "Flutter",
@@ -20,29 +25,24 @@
         "color": "#FCCA3F"
     },
     {
-        "name": "Java",
-        "image": "java",
-        "color": "#5382A1"
-    },
-    {
         "name": "SQLite",
         "image": "sqlite",
         "color": "#58AFE2"
     },
     {
-        "name": "WordPress",
-        "image": "wordpress",
-        "color": "#454342"
+        "name": "JaveScript",
+        "image": "javascript",
+        "color": "#F7DF1E"
+    },
+    {
+        "name": "TypeScript",
+        "image": "typescript",
+        "color": "#1769AA"
     },
     {
         "name": "Bootstrap",
         "image": "bootstrap",
         "color": "#8312FA"
-    },
-    {
-        "name": "JaveScript",
-        "image": "javascript",
-        "color": "#F7DF1E"
     },
     {
         "name": "JQuery",
@@ -55,9 +55,9 @@
         "color": "#00B0FF"
     },
     {
-        "name": "Next JS",
-        "image": "next",
-        "color": "#111111"
+        "name": "Redux",
+        "image": "redux",
+        "color": "#764ABC"
     },
     {
         "name": "React JS",
@@ -65,19 +65,9 @@
         "color": "#61DAFB"
     },
     {
-        "name": "Redux",
-        "image": "redux",
-        "color": "#764ABC"
-    },
-    {
-        "name": "Yarn",
-        "image": "yarn",
-        "color": "#2C8EBA"
-    },
-    {
-        "name": "TypeScript",
-        "image": "typescript",
-        "color": "#1769AA"
+        "name": "Next JS",
+        "image": "next",
+        "color": "#FFFFFF"
     },
     {
         "name": "SASS",
@@ -85,29 +75,14 @@
         "color": "#CD6799"
     },
     {
-        "name": "Express JS",
-        "image": "express",
-        "color": "#111111"
+        "name": "WordPress",
+        "image": "wordpress",
+        "color": "#21769B"
     },
     {
-        "name": "Mongo DB",
-        "image": "mongodb",
-        "color": "#58AA50"
-    },
-    {
-        "name": "SQL Server",
-        "image": "mssql",
-        "color": "#111111"
-    },
-    {
-        "name": "MySQL",
-        "image": "mysql",
-        "color": "#00758F"
-    },
-    {
-        "name": "Nest JS",
-        "image": "nest",
-        "color": "#EA2845"
+        "name": "Laravel",
+        "image": "laravel",
+        "color": "#FE2D1F"
     },
     {
         "name": "Node JS",
@@ -115,14 +90,64 @@
         "color": "#64B547"
     },
     {
-        "name": "PostgreSQL",
-        "image": "postgresql",
-        "color": "#336791"
+        "name": "Express JS",
+        "image": "express",
+        "color": "#979797"
+    },
+    {
+        "name": "Nest JS",
+        "image": "nest",
+        "color": "#EA2845"
     },
     {
         "name": "Java Spring",
         "image": "spring",
         "color": "#77BC1F"
+    },
+    {
+        "name": "SQL Server",
+        "image": "mssql",
+        "color": "#D0D8DC"
+    },
+    {
+        "name": "MySQL",
+        "image": "mysql",
+        "color": "#00758F"
+    },
+    {
+        "name": "PostgreSQL",
+        "image": "postgresql",
+        "color": "#336791"
+    },
+    {
+        "name": "Mongo DB",
+        "image": "mongodb",
+        "color": "#58AA50"
+    },
+    {
+        "name": "Solidity",
+        "image": "solidity",
+        "color": "#A5A5A5"
+    },
+    {
+        "name": "Truffle",
+        "image": "truffle",
+        "color": "#5E464E"
+    },
+    {
+        "name": "Ganache",
+        "image": "ganache",
+        "color": "#E4A662"
+    },
+    {
+        "name": "Ethereum",
+        "image": "ethereum",
+        "color": "#7987CB"
+    },
+    {
+        "name": "Web3 js",
+        "image": "web3js",
+        "color": "#F16923"
     },
     {
         "name": "Docker",
