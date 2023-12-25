@@ -18,17 +18,51 @@ const Services = () => {
     const { state } = useContext(AppContext)
 
     return (
-        <Box>
+        <Box
+            data-aos="zoom-in"
+            data-aos-offset="100"
+            data-aos-delay="10"
+            data-aos-duration="750"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="center-center"
+        >
             <Header color={state.color.light} title='SERVICES' />
             <Stack
                 direction={{ xs: 'column', md: 'row' }}
                 spacing={{ xs: 3, md: 4 }}
             >
-                <Card src={backend} color={state.color.light} alt="Backend Development" text="Backend Development" />
-                <Card src={frontend} color={state.color.light} alt="Frontend Development" text="Frontend Development" />
-                <Card src={mobile} color={state.color.light} alt="Mobile App Development" text="Mobile App Development" />
-                <Card src={blockchain} color={state.color.light} alt="BlockChain Development" text="BlockChain Development" />
-                <Card src={database} color={state.color.light} alt="Database Development" text="Database Development" />
+                <Card
+                    src={backend}
+                    color={state.color.light}
+                    alt="Backend Development"
+                    text="Backend Development"
+                />
+                <Card
+                    src={frontend}
+                    color={state.color.light}
+                    alt="Frontend Development"
+                    text="Frontend Development"
+                />
+                <Card
+                    src={mobile}
+                    color={state.color.light}
+                    alt="Mobile App Development"
+                    text="Mobile App Development"
+                />
+                <Card
+                    src={blockchain}
+                    color={state.color.light}
+                    alt="BlockChain Development"
+                    text="BlockChain Development"
+                />
+                <Card
+                    src={database}
+                    color={state.color.light}
+                    alt="Database Development"
+                    text="Database Development"
+                />
             </Stack>
         </Box>
     )

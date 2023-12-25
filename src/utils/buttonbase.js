@@ -4,7 +4,7 @@ import Lottie from "react-lottie"
 const CustomButtonBase = (props) => <ButtonBase
     href={props.href}
     target='_blank'
-    sx={{ width: '25%' }}
+    sx={{ width: '20%' }}
 >
     <Lottie
         options={{

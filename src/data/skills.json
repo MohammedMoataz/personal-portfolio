@@ -5,19 +5,9 @@
         "color": "#5382A1"
     },
     {
-        "name": "Dart",
-        "image": "dart",
-        "color": "#055A9D"
-    },
-    {
         "name": "Flutter",
         "image": "flutter",
         "color": "#47C5FB"
-    },
-    {
-        "name": "React Native",
-        "image": "react_native",
-        "color": "#176AAB"
     },
     {
         "name": "Firebase",
@@ -80,19 +70,9 @@
         "color": "#21769B"
     },
     {
-        "name": "Laravel",
-        "image": "laravel",
-        "color": "#FE2D1F"
-    },
-    {
         "name": "Node JS",
         "image": "node",
         "color": "#64B547"
-    },
-    {
-        "name": "Express JS",
-        "image": "express",
-        "color": "#979797"
     },
     {
         "name": "Nest JS",
@@ -113,11 +93,6 @@
         "name": "MySQL",
         "image": "mysql",
         "color": "#00758F"
-    },
-    {
-        "name": "PostgreSQL",
-        "image": "postgresql",
-        "color": "#336791"
     },
     {
         "name": "Mongo DB",

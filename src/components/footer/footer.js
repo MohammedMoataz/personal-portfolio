@@ -11,6 +11,7 @@ import gmailLottie from './../../assets/lotties/gmail.json'
 import linkedinLottie from './../../assets/lotties/linkedin.json'
 import facebookLottie from './../../assets/lotties/facebook.json'
 import githubLottie from './../../assets/lotties/github.dark.json'
+import telegramLottie from './../../assets/lotties/telegram.json'
 import data from '../../data/portfolio.json'
 import CustomButtonBase from '../../utils/buttonbase.js'
 
@@ -61,6 +62,11 @@ const Footer = () => {
                         href={data.github.url}
                         animationData={githubLottie}
                         title={data.github.title}
+                    />
+                    <CustomButtonBase
+                        href={data.telegram.url}
+                        animationData={telegramLottie}
+                        title={data.telegram.title}
                     />
                 </Stack>
             </Stack>

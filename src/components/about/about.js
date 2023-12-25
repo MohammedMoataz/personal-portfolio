@@ -18,7 +18,7 @@ const About = () => {
 
     return (
         <Box>
-            <Header color={state.color.light} title='ABOUT' />
+            <Header color={state.color.light} title='ABOUT ME' />
             <Stack
                 direction={{ xs: 'column', md: 'row' }}
                 spacing={{ xs: 1, sm: 2, md: 4 }}
@@ -27,7 +27,7 @@ const About = () => {
             >
                 <Box
                     sx={{
-                        width: { xs: "50%", md: "30%" },
+                        width: { xs: "70%", md: "30%" },
                     }}
                 >
                     <Lottie

@@ -14,6 +14,7 @@ import gmailLottie from './../../assets/lotties/gmail.json'
 import linkedinLottie from './../../assets/lotties/linkedin.json'
 import facebookLottie from './../../assets/lotties/facebook.json'
 import githubLottie from './../../assets/lotties/github.json'
+import telegramLottie from './../../assets/lotties/telegram.json'
 import img from "./../../assets/webp/mohammed.webp"
 import data from '../../data/portfolio.json'
 
@@ -33,38 +34,41 @@ const Home = () => {
                     spacing={{ xs: 1, sm: 2, md: 4 }}
                     justifyContent="space-evenly"
                     sx={{
-                        width: { xs: "75%", md: "45%" },
+                        width: { xs: "80%", md: "45%" },
                         alignItems: { xs: 'center', md: "flex-start" }
                     }}
                 >
-                    <Typography
-                        variant="h2"
-                        sx={{
-                            color: state.color.secondary,
-                            fontWeight: 700,
-                            fontSize: { xs: 24, sm: 28, md: 32, lg: 36 },
-                        }}
-                    >
-                        {data.title}
-                    </Typography>
-                    <Typography
-                        variant="h1"
-                        gutterBottom
-                        sx={{
-                            color: state.color.light,
-                            fontWeight: 900,
-                            fontSize: { xs: 24, sm: 36, md: 44, lg: 50 },
-                        }}
-                    >
-                        {data.name}
-                    </Typography>
+                    <Stack>
+                        <Typography
+                            variant="h2"
+                            gutterBottom
+                            sx={{
+                                color: state.color.secondary,
+                                fontWeight: 700,
+                                fontSize: { xs: 24, sm: 28, md: 32, lg: 36 },
+                            }}
+                        >
+                            {data.title}
+                        </Typography>
+                        <Typography
+                            variant="h1"
+                            gutterBottom
+                            sx={{
+                                color: state.color.light,
+                                fontWeight: 900,
+                                fontSize: { xs: 24, sm: 36, md: 44, lg: 50 },
+                            }}
+                        >
+                            {data.name}
+                        </Typography>
+                    </Stack>
                     <Stack
                         direction={{ xs: 'row' }}
-                        spacing={{ xs: 1, sm: 2, md: 3 }}
+                        spacing={{ xs: 1 }}
                         justifyContent="flex-start"
                         alignItems='flex-start'
                         sx={{
-                            width: '70%',
+                            width: { xs: '95%', md: '85%', xl: '75%' },
                             py: "2%"
                         }}
                     >
@@ -88,6 +92,11 @@ const Home = () => {
                             animationData={githubLottie}
                             title={data.github.title}
                         />
+                        <CustomButtonBase
+                            href={data.telegram.url}
+                            animationData={telegramLottie}
+                            title={data.telegram.title}
+                        />
                     </Stack>
                     <Stack
                         sx={{ py: "2%" }}
@@ -108,7 +117,7 @@ const Home = () => {
                 </Stack>
                 <Box
                     sx={{
-                        width: { xs: "75%", md: "45%" },
+                        width: { xs: "80%", md: "45%" },
                         padding: "5%",
                         alignItems: { xs: 'center', md: "flex-start" }
                     }}
