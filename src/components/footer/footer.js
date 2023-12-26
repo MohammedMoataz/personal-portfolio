@@ -52,20 +52,6 @@ const Footer = () => {
                     <LinkedInIcon fontSize='large' />
                 </IconButton>
                 <IconButton
-                    aria-label="Facebook"
-                    href={data.facebook.url}
-                    target='_blank'
-                    sx={{
-                        color: "#FFFFFF",
-                        '&:hover': {
-                            boxShadow: '0px 0px 7px 2px #368F80',
-                        },
-                    }}
-                    title={data.facebook.title}
-                >
-                    <FacebookIcon fontSize='large' />
-                </IconButton>
-                <IconButton
                     aria-label="GitHub"
                     href={data.github.url}
                     target='_blank'
@@ -78,6 +64,20 @@ const Footer = () => {
                     title={data.github.title}
                 >
                     <GitHubIcon fontSize='large' />
+                </IconButton>
+                <IconButton
+                    aria-label="Facebook"
+                    href={data.facebook.url}
+                    target='_blank'
+                    sx={{
+                        color: "#FFFFFF",
+                        '&:hover': {
+                            boxShadow: '0px 0px 7px 2px #368F80',
+                        },
+                    }}
+                    title={data.facebook.title}
+                >
+                    <FacebookIcon fontSize='large' />
                 </IconButton>
                 <IconButton
                     aria-label="Telegram"

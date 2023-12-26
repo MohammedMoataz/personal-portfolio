@@ -85,14 +85,14 @@ const Home = () => {
                             title={data.linkedin.title}
                         />
                         <CustomButtonBase
-                            href={data.facebook.url}
-                            animationData={facebookLottie}
-                            title={data.facebook.title}
-                        />
-                        <CustomButtonBase
                             href={data.github.url}
                             animationData={githubLottie}
                             title={data.github.title}
+                        />
+                        <CustomButtonBase
+                            href={data.facebook.url}
+                            animationData={facebookLottie}
+                            title={data.facebook.title}
                         />
                         <CustomButtonBase
                             href={data.telegram.url}
