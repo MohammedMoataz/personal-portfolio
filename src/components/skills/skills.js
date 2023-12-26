@@ -46,7 +46,7 @@ const Skills = () => {
                                 border: `1px solid ${skill.color}`,
                                 width: { xs: '6rem', md: '10rem' },
                                 height: { xs: '6rem', md: '10rem' },
-                                padding: '0.8rem',
+                                padding: '0.7rem',
                                 mx: 2,
                                 my: 3,
                             }}
@@ -63,7 +63,7 @@ const Skills = () => {
                             <Typography
                                 variant="span"
                                 fontWeight={700}
-                                fontSize={{ xs: '0.8rem', md: '1.1rem' }}
+                                fontSize={{ xs: '0.7rem', md: '1.1rem' }}
                                 color={skill.color}
                             >
                                 {skill.name}
