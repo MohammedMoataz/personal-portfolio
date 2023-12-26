@@ -11,7 +11,7 @@ import Download from '@mui/icons-material/Download'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 
 import { ColorButton } from './button.js'
-import resume from './../assets/pdf/mohammed-moataz-resume.pdf'
+import resume from './../assets/pdf/Mohammed Moataz Resume.pdf'
 
 const StyledMenu = styled((props) => (
     <Menu
@@ -87,7 +87,7 @@ const CustomizedMenus = () => {
                 <MenuItem
                     component={"a"}
                     href={resume}
-                    download='mohammed-moataz-resume'
+                    download='Mohammed Moataz Resume.pdf'
                     target='_blank'
                     rel='noreferrer'
                     disableRipple

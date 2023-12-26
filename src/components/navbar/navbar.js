@@ -19,7 +19,7 @@ import MenuIcon from '@mui/icons-material/Menu'
 
 import { AppContext } from '././../../context/context/context.js'
 import logo from "./../../assets/webp/logo.webp"
-import resume from './../../assets/pdf/mohammed-moataz-resume.pdf'
+import resume from './../../assets/pdf/Mohammed Moataz Resume.pdf'
 
 const drawerWidth = 240
 
