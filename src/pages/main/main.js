@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import {
     Toolbar,
 } from '@mui/material'
-
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
@@ -11,7 +10,7 @@ import About from './../../components/about/about.js'
 import Skills from './../../components/skills/skills.js'
 import Services from './../../components/services/services.js'
 import Contact from './../../components/contact/contact.js'
-import FloatingActionButton from '../../utils/floatingActionButton.js'
+import FloatingActionButton from './../../utils/floatingActionButton.js'
 
 const Main = () => {
     useEffect(() => {

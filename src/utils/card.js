@@ -24,7 +24,7 @@ const CustomCard = (props) => <Card
             direction={{ xs: 'row-reverse', md: 'column' }}
             justifyContent={{ xs: 'space-between', md: 'center' }}
             alignItems='center'
-            spacing={{ xs: 15, md: 5 }}
+            spacing={{ xs: 8, md: 5 }}
         >
             <Box
                 component='img'
@@ -37,9 +37,9 @@ const CustomCard = (props) => <Card
             <Typography
                 variant="span"
                 fontWeight={500}
-                fontSize={'1.1rem'}
+                fontSize={'1rem'}
                 color={props.color}
-                textAlign={'center'}
+                textAlign={{ xs: 'left', sm: 'center' }}
                 gutterBottom
             >
                 {props.text}

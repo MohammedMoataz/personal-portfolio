@@ -76,13 +76,13 @@ const CustomizedMenus = () => {
             >
                 <MenuItem
                     component={"a"}
-                    href='https://docs.google.com/document/d/1ZVKtWKO7fh6csbRjYcLXriAlIA9lcXPnO6Z9buhObXA/edit?usp=sharing'
+                    href={resume}
                     target="_blank"
                     disableRipple
                     sx={{ '&:hover': { bgcolor: '#368F80' } }}
                 >
                     <LaunchIcon />
-                    <Typography ml={1}>Visit (.docx)</Typography>
+                    <Typography ml={1}>Visit</Typography>
                 </MenuItem>
                 <MenuItem
                     component={"a"}
@@ -94,7 +94,7 @@ const CustomizedMenus = () => {
                     sx={{ '&:hover': { bgcolor: '#368F80' } }}
                 >
                     <Download />
-                    <Typography ml={1}>Download (.pdf)</Typography>
+                    <Typography ml={1}>Download</Typography>
                 </MenuItem>
             </StyledMenu>
         </Box>

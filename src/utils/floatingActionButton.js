@@ -18,7 +18,7 @@ const FloatingActionButton = () => {
         aria-label="chat"
         sx={{
             position: "fixed",
-            bottom: 50,
+            bottom: { xs: 100, sm: 50 },
             right: 50,
             bgcolor: state.color.primary,
             display: visible ? 'inline-flex' : 'none',

@@ -1,5 +1,10 @@
 [
     {
+        "name": "Dart",
+        "image": "dart",
+        "color": "#055A9D"
+    },
+    {
         "name": "Java",
         "image": "java",
         "color": "#5382A1"

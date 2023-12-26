@@ -25,11 +25,7 @@ const About = () => {
                 justifyContent="space-around"
                 alignItems="center"
             >
-                <Box
-                    sx={{
-                        width: { xs: "70%", md: "30%" },
-                    }}
-                >
+                <Box sx={{ width: { xs: "70%", md: "30%" }, }}>
                     <Lottie
                         options={{
                             loop: true,
@@ -43,7 +39,7 @@ const About = () => {
                 </Box>
                 <Box
                     sx={{
-                        width: { xs: "75%", md: "45%" },
+                        width: { xs: "95%", md: "45%" },
                         alignItems: { xs: 'center', md: "flex-start" }
                     }}
                 >

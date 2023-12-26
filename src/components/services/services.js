@@ -19,14 +19,14 @@ const Services = () => {
 
     return (
         <Box
-            data-aos="zoom-in"
-            data-aos-offset="100"
-            data-aos-delay="10"
-            data-aos-duration="750"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="false"
-            data-aos-anchor-placement="center-center"
+            // data-aos="zoom-in"
+            // data-aos-offset="100"
+            // data-aos-delay="10"
+            // data-aos-duration="750"
+            // data-aos-easing="ease-in-out"
+            // data-aos-mirror="true"
+            // data-aos-once="false"
+            // data-aos-anchor-placement="center-center"
         >
             <Header color={state.color.light} title='SERVICES' />
             <Stack

@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react'
+import { useNavigate } from "react-router-dom"
 import {
     Avatar,
     AppBar,
@@ -18,7 +19,7 @@ import MenuIcon from '@mui/icons-material/Menu'
 
 import { AppContext } from '././../../context/context/context.js'
 import logo from "./../../assets/webp/logo.webp"
-import data from '../../data/navbar.json'
+import resume from './../../assets/pdf/mohammed-moataz-resume.pdf'
 
 const drawerWidth = 240
 
@@ -26,15 +27,14 @@ const DrawerAppBar = (props) => {
     const { window } = props
     const [mobileOpen, setMobileOpen] = useState(false)
     const { state } = useContext(AppContext)
+    const navigate = useNavigate()
 
-    const handleDrawerToggle = () => {
-        setMobileOpen((prevState) => !prevState)
-    }
+    const handleDrawerToggle = () => setMobileOpen((prevState) => !prevState)
+
+    const container = window !== undefined ? () => window().document.body : undefined
 
     const drawer = (
-        <Box onClick={handleDrawerToggle} sx={{
-            textAlign: 'center',
-        }}>
+        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', }}>
             <Box
                 sx={{
                     p: 2,
@@ -46,24 +46,36 @@ const DrawerAppBar = (props) => {
                     alt='Mohammed'
                 />
             </Box>
-            <Divider
-                sx={{
-                    bgcolor: state.color.primary,
-                }}
-            />
+            <Divider sx={{ bgcolor: state.color.primary, }} />
             <List>
-                {data.navItems.map((item, index) => (
-                    <ListItem key={index} disablePadding>
-                        <ListItemButton href={`#${item}`} sx={{ textAlign: 'center' }}>
-                            <ListItemText primary={item} />
-                        </ListItemButton>
-                    </ListItem>
-                ))}
+                <ListItem disablePadding>
+                    <ListItemButton
+                        onClick={() => navigate('/')}
+                        sx={{ textAlign: 'center' }}
+                    >
+                        <ListItemText primary={"Home"} />
+                    </ListItemButton>
+                </ListItem>
+                <ListItem disablePadding>
+                    <ListItemButton
+                        onClick={() => navigate(`/projects`)}
+                        sx={{ textAlign: 'center' }}
+                    >
+                        <ListItemText primary={"Projects"} />
+                    </ListItemButton>
+                </ListItem>
+                <ListItem disablePadding>
+                    <ListItemButton
+                        href={resume}
+                        target="_blank"
+                        sx={{ textAlign: 'center' }}
+                    >
+                        <ListItemText primary={"Resume"} />
+                    </ListItemButton>
+                </ListItem>
             </List>
         </Box >
     )
-
-    const container = window !== undefined ? () => window().document.body : undefined
 
     return (
         <Box sx={{ display: 'flex' }}>
@@ -95,11 +107,25 @@ const DrawerAppBar = (props) => {
                         />
                     </Box>
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-                        {data.navItems.map((item, index) => (
-                            <Button key={index} href={`#${item}`} sx={{ color: state.color.light }}>
-                                {item}
-                            </Button>
-                        ))}
+                        <Button
+                            onClick={() => navigate('/')}
+                            sx={{ color: state.color.light }}
+                        >
+                            Home
+                        </Button>
+                        <Button
+                            onClick={() => navigate(`/projects`)}
+                            sx={{ color: state.color.light }}
+                        >
+                            Projects
+                        </Button>
+                        <Button
+                            href={resume}
+                            target="_blank"
+                            sx={{ color: state.color.light }}
+                        >
+                            Resume
+                        </Button>
                     </Box>
                 </Toolbar>
             </AppBar>

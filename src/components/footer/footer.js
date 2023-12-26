@@ -1,74 +1,98 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import {
     Box,
     Stack,
-    Typography
 } from '@mui/material'
+import IconButton from '@mui/material/IconButton'
+import EmailIcon from '@mui/icons-material/Email'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import FacebookIcon from '@mui/icons-material/Facebook'
+import GitHubIcon from '@mui/icons-material/GitHub'
+import TelegramIcon from '@mui/icons-material/Telegram'
 
-import { AppContext } from './../../context/context/context.js'
-
-import gmailLottie from './../../assets/lotties/gmail.json'
-import linkedinLottie from './../../assets/lotties/linkedin.json'
-import facebookLottie from './../../assets/lotties/facebook.json'
-import githubLottie from './../../assets/lotties/github.dark.json'
-import telegramLottie from './../../assets/lotties/telegram.json'
 import data from '../../data/portfolio.json'
-import CustomButtonBase from '../../utils/buttonbase.js'
 
 const Footer = () => {
-    const { state } = useContext(AppContext)
-
     return (
-        <Box>
+        <Box pb={5}>
             <Stack
-                direction={{ xs: 'column-reverse', md: 'row' }}
-                spacing={{ xs: 1, sm: 2, md: 4 }}
-                justifyContent="space-evenly"
+                direction={{ xs: 'row' }}
+                spacing={{ xs: 1, sm: 2, md: 3 }}
+                justifyContent="center"
                 alignItems='center'
                 py={{ xs: "3%", md: '2%' }}
+                width={{ xs: '100%' }}
             >
-                <Typography
-                    color={state.color.primary}
-                    fontWeight={700}
-                    fontSize={{ xs: 14, sm: 16, md: 18, lg: 20 }}
-                >
-                    Mohammed Moataz 💙 2023
-                </Typography>
-                <Stack
-                    direction={{ xs: 'row' }}
-                    spacing={{ xs: 1, sm: 2, md: 3 }}
-                    justifyContent="flex-start"
-                    alignItems='flex-start'
+                <IconButton
+                    aria-label="Gmail"
+                    href={data.gmail.url}
+                    target='_blank'
                     sx={{
-                        width: { xs: '40%', sm: '30%', md: '25%', lg: '18%' },
+                        color: "#FFFFFF",
+                        '&:hover': {
+                            boxShadow: '0px 0px 7px 2px #368F80',
+                        },
                     }}
+                    title={data.gmail.title}
                 >
-                    <CustomButtonBase
-                        href={data.gmail.url}
-                        animationData={gmailLottie}
-                        title={data.gmail.title}
-                    />
-                    <CustomButtonBase
-                        href={data.linkedin.url}
-                        animationData={linkedinLottie}
-                        title={data.linkedin.title}
-                    />
-                    <CustomButtonBase
-                        href={data.facebook.url}
-                        animationData={facebookLottie}
-                        title={data.facebook.title}
-                    />
-                    <CustomButtonBase
-                        href={data.github.url}
-                        animationData={githubLottie}
-                        title={data.github.title}
-                    />
-                    <CustomButtonBase
-                        href={data.telegram.url}
-                        animationData={telegramLottie}
-                        title={data.telegram.title}
-                    />
-                </Stack>
+                    <EmailIcon fontSize='large' />
+                </IconButton>
+                <IconButton
+                    aria-label="LinkedIn"
+                    href={data.linkedin.url}
+                    target='_blank'
+                    sx={{
+                        color: "#FFFFFF",
+                        '&:hover': {
+                            boxShadow: '0px 0px 7px 2px #368F80',
+                        },
+                    }}
+                    title={data.linkedin.title}
+                >
+                    <LinkedInIcon fontSize='large' />
+                </IconButton>
+                <IconButton
+                    aria-label="Facebook"
+                    href={data.facebook.url}
+                    target='_blank'
+                    sx={{
+                        color: "#FFFFFF",
+                        '&:hover': {
+                            boxShadow: '0px 0px 7px 2px #368F80',
+                        },
+                    }}
+                    title={data.facebook.title}
+                >
+                    <FacebookIcon fontSize='large' />
+                </IconButton>
+                <IconButton
+                    aria-label="GitHub"
+                    href={data.github.url}
+                    target='_blank'
+                    sx={{
+                        color: "#FFFFFF",
+                        '&:hover': {
+                            boxShadow: '0px 0px 7px 2px #368F80',
+                        },
+                    }}
+                    title={data.github.title}
+                >
+                    <GitHubIcon fontSize='large' />
+                </IconButton>
+                <IconButton
+                    aria-label="Telegram"
+                    href={data.telegram.url}
+                    target='_blank'
+                    sx={{
+                        color: "#FFFFFF",
+                        '&:hover': {
+                            boxShadow: '0px 0px 7px 2px #368F80',
+                        },
+                    }}
+                    title={data.telegram.title}
+                >
+                    <TelegramIcon fontSize='large' />
+                </IconButton>
             </Stack>
         </Box >
     )

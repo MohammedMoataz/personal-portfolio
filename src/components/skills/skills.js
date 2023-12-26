@@ -43,10 +43,10 @@ const Skills = () => {
                                 borderRadius: "1rem",
                                 boxShadow: `0px 0px 5px 1px ${skill.color}`,
                                 border: `1px solid ${skill.color}`,
-                                mx: '1rem',
-                                width: '10rem',
-                                height: '10rem',
-                                padding: '1rem',
+                                width: { xs: '6rem', md: '10rem' },
+                                height: { xs: '6rem', md: '10rem' },
+                                padding: '0.8rem',
+                                mx: 2,
                                 my: 3,
                             }}
                         >
@@ -55,14 +55,14 @@ const Skills = () => {
                                 alt={skill.name}
                                 src={skillImage(skill.image)}
                                 sx={{
-                                    maxWidth: '8rem',
-                                    height: '4rem',
+                                    maxWidth: { xs: '4rem', md: '8rem' },
+                                    height: { xs: '3rem', md: '4rem' },
                                 }}
                             />
                             <Typography
                                 variant="span"
                                 fontWeight={700}
-                                fontSize={'1.1rem'}
+                                fontSize={{ xs: '0.8rem', md: '1.1rem' }}
                                 color={skill.color}
                             >
                                 {skill.name}
@@ -70,8 +70,8 @@ const Skills = () => {
                         </Stack>
                     ))}
                 </Marquee>
-            </Stack>
-        </Box>
+            </Stack >
+        </Box >
     )
 }
 
