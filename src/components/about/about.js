@@ -20,12 +20,15 @@ const About = () => {
         <Box>
             <Header color={state.color.light} title='ABOUT ME' />
             <Stack
+                data-aos="fade-up"
                 direction={{ xs: 'column', md: 'row' }}
                 spacing={{ xs: 1, sm: 2, md: 4 }}
                 justifyContent="space-around"
                 alignItems="center"
             >
-                <Box sx={{ width: { xs: "70%", md: "30%" }, }}>
+                <Box
+                    sx={{ width: { xs: "70%", md: "30%" }, }}
+                >
                     <Lottie
                         options={{
                             loop: true,

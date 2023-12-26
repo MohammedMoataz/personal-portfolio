@@ -36,22 +36,21 @@ const DrawerAppBar = (props) => {
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', }}>
             <Box
-                sx={{
-                    p: 2,
-                    textAlign: '-webkit-center'
-                }}
+                sx={{ p: 2, textAlign: '-webkit-center' }}
             >
-                <Avatar
-                    src={logo}
-                    alt='Mohammed'
-                />
+                <Avatar src={logo} alt='Mohammed' />
             </Box>
             <Divider sx={{ bgcolor: state.color.primary, }} />
             <List>
                 <ListItem disablePadding>
                     <ListItemButton
                         onClick={() => navigate('/')}
-                        sx={{ textAlign: 'center' }}
+                        sx={{
+                            textAlign: 'center',
+                            '&:hover': {
+                                backgroundColor: '#368F80',
+                            },
+                        }}
                     >
                         <ListItemText primary={"Home"} />
                     </ListItemButton>
@@ -59,7 +58,12 @@ const DrawerAppBar = (props) => {
                 <ListItem disablePadding>
                     <ListItemButton
                         onClick={() => navigate(`/projects`)}
-                        sx={{ textAlign: 'center' }}
+                        sx={{
+                            textAlign: 'center',
+                            '&:hover': {
+                                backgroundColor: '#368F80',
+                            },
+                        }}
                     >
                         <ListItemText primary={"Projects"} />
                     </ListItemButton>
@@ -68,7 +72,12 @@ const DrawerAppBar = (props) => {
                     <ListItemButton
                         href={resume}
                         target="_blank"
-                        sx={{ textAlign: 'center' }}
+                        sx={{
+                            textAlign: 'center',
+                            '&:hover': {
+                                backgroundColor: '#368F80',
+                            },
+                        }}
                     >
                         <ListItemText primary={"Resume"} />
                     </ListItemButton>
@@ -101,28 +110,40 @@ const DrawerAppBar = (props) => {
                         <MenuIcon />
                     </IconButton>
                     <Box>
-                        <Avatar
-                            src={logo}
-                            alt='Mohammed'
-                        />
+                        <Avatar src={logo} alt='Mohammed' />
                     </Box>
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                         <Button
                             onClick={() => navigate('/')}
-                            sx={{ color: state.color.light }}
+                            sx={{
+                                color: state.color.light,
+                                '&:hover': {
+                                    backgroundColor: '#368F80',
+                                },
+                            }}
                         >
                             Home
                         </Button>
                         <Button
                             onClick={() => navigate(`/projects`)}
-                            sx={{ color: state.color.light }}
+                            sx={{
+                                color: state.color.light,
+                                '&:hover': {
+                                    backgroundColor: '#368F80',
+                                },
+                            }}
                         >
                             Projects
                         </Button>
                         <Button
                             href={resume}
                             target="_blank"
-                            sx={{ color: state.color.light }}
+                            sx={{
+                                color: state.color.light,
+                                '&:hover': {
+                                    backgroundColor: '#368F80',
+                                },
+                            }}
                         >
                             Resume
                         </Button>

@@ -21,7 +21,7 @@ const Footer = () => {
                 justifyContent="center"
                 alignItems='center'
                 py={{ xs: "3%", md: '2%' }}
-                width={{ xs: '100%' }}
+                width={{ xs: '95%' }}
             >
                 <IconButton
                     aria-label="Gmail"

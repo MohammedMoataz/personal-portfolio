@@ -79,6 +79,10 @@ const Contact = () => {
                             value={message}
                             required
                             aria-multiline={true}
+                            sx={{
+                                minHeight: { xs: 15, md: 25 },
+                                minWidth: "100%",
+                            }}
                         />
                         <ColorButton
                             variant="contained"

@@ -31,13 +31,13 @@ const CustomCard = (props) => <Card
                 src={props.src}
                 alt={props.alt}
                 sx={{
-                    width: { xs: '4rem', md: '5rem' },
+                    width: { xs: '3rem', md: '5rem' },
                 }}
             />
             <Typography
                 variant="span"
                 fontWeight={500}
-                fontSize={'1rem'}
+                fontSize={{ xs: '0.8rem', md: '1rem' }}
                 color={props.color}
                 textAlign={{ xs: 'left', sm: 'center' }}
                 gutterBottom

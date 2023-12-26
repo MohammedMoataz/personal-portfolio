@@ -24,6 +24,8 @@ const Home = () => {
     return (
         <Box>
             <Stack
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
                 direction={{ xs: 'column-reverse', md: 'row' }}
                 spacing={{ xs: 1, sm: 2, md: 4 }}
                 justifyContent="space-between"
@@ -68,7 +70,7 @@ const Home = () => {
                         justifyContent="flex-start"
                         alignItems='flex-start'
                         sx={{
-                            width: { xs: '95%', md: '85%', xl: '75%' },
+                            width: { xs: '95%', sm: '85%', xl: '75%' },
                             py: "2%"
                         }}
                     >
@@ -116,6 +118,9 @@ const Home = () => {
                     </Stack>
                 </Stack>
                 <Box
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-easing="ease-in-out"
                     sx={{
                         width: { xs: "80%", md: "45%" },
                         padding: "5%",

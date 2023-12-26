@@ -1,9 +1,7 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import {
     Toolbar,
 } from '@mui/material'
-import Aos from 'aos'
-import 'aos/dist/aos.css'
 
 import Home from './../../components/home/home.js'
 import About from './../../components/about/about.js'
@@ -13,10 +11,6 @@ import Contact from './../../components/contact/contact.js'
 import FloatingActionButton from './../../utils/floatingActionButton.js'
 
 const Main = () => {
-    useEffect(() => {
-        Aos.init({ duration: 1000 })
-    }, [])
-
     return (
         <React.Fragment>
             <div id='Home'></div>

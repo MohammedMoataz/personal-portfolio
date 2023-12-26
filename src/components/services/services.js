@@ -18,18 +18,10 @@ const Services = () => {
     const { state } = useContext(AppContext)
 
     return (
-        <Box
-            // data-aos="zoom-in"
-            // data-aos-offset="100"
-            // data-aos-delay="10"
-            // data-aos-duration="750"
-            // data-aos-easing="ease-in-out"
-            // data-aos-mirror="true"
-            // data-aos-once="false"
-            // data-aos-anchor-placement="center-center"
-        >
+        <Box>
             <Header color={state.color.light} title='SERVICES' />
             <Stack
+                data-aos="fade-up"
                 direction={{ xs: 'column', md: 'row' }}
                 spacing={{ xs: 3, md: 4 }}
             >

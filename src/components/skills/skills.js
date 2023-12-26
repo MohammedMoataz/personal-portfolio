@@ -18,6 +18,7 @@ const Skills = () => {
         <Box>
             <Header color={state.color.light} title='SKILLS' />
             <Stack
+                data-aos="fade-up"
                 direction={{ xs: 'row' }}
                 spacing={{ xs: 1, sm: 2, md: 4 }}
             >

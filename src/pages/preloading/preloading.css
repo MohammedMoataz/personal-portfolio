@@ -1,0 +1,91 @@
+@keyframes bg {
+    from {
+        background-color: #1E1E1E;
+    }
+}
+
+.bound {
+    width: 700px;
+    border: solid 1px #000000;
+    position: absolute;
+    aspect-ratio: 1/1;
+    display: none;
+}
+
+#preloading {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #40718D;
+    background-image: radial-gradient(circle at top,
+            #00000000,
+            #00000099),
+        linear-gradient(0deg, #00000080,
+            #00000000);
+    animation: 2s bg ease infinite alternate;
+}
+
+#preloading .main_spinner {
+    animation: 2s spin linear infinite;
+    width: 150px;
+}
+
+#preloading .main_spinner .dot {
+    animation: 1s backspin linear infinite;
+    position: absolute;
+    box-shadow: 0 112px #A2C6F1, 0 -112px #A2C6F1, 112px 0 #A2C6F1, -112px 0 #A2C6F1;
+    border-radius: 100px;
+    height: 50px;
+    width: 50px;
+}
+
+#preloading .main_spinner .dot_1 {
+    left: 0;
+}
+
+#preloading .main_spinner .dot_2 {
+    right: 0;
+}
+
+#preloading .main_spinner .center_mass {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 50%;
+    top: 50%;
+    margin-top: -12.5px;
+    margin-left: -12.5px;
+    background: #368F80;
+    border-radius: 25px;
+    box-shadow: 100px 0 #368F80, -100px 0 #368F80;
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        -webkit-transform: rotate(180deg) scale(0.9);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg) scale(1);
+    }
+}
+
+@keyframes backspin {
+    0% {
+        -webkit-transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        -webkit-transform: rotate(-180deg) scale(0.9);
+    }
+
+    100% {
+        -webkit-transform: rotate(-360deg) scale(1);
+    }
+}
