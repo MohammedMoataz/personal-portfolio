@@ -97,9 +97,7 @@ const DrawerAppBar = (props) => {
                     py: '0.75%',
                 }}
             >
-                <Toolbar
-                    sx={{ justifyContent: { sm: 'space-between' } }}
-                >
+                <Toolbar sx={{ justifyContent: { sm: 'space-between' } }}>
                     <IconButton
                         color="inherit"
                         aria-label="open drawer"
