@@ -10,38 +10,35 @@ import Services from './../../components/services/services.js'
 import Contact from './../../components/contact/contact.js'
 import FloatingActionButton from './../../utils/floatingActionButton.js'
 
-const Main = () => {
-    return (
-        <React.Fragment>
-            <div id='Home'></div>
-            <Toolbar />
-            <Toolbar />
-            <Home />
+const Main = () =>
+    <React.Fragment>
+        <div id='Home'></div>
+        <Toolbar />
+        <Toolbar />
+        <Home />
 
-            <div id='About'></div>
-            <Toolbar />
-            <Toolbar />
-            <About />
+        <div id='About'></div>
+        <Toolbar />
+        <Toolbar />
+        <About />
 
-            <div id='Skills'></div>
-            <Toolbar />
-            <Toolbar />
-            <Skills />
+        <div id='Skills'></div>
+        <Toolbar />
+        <Toolbar />
+        <Skills />
 
-            <div id='Services'></div>
-            <Toolbar />
-            <Toolbar />
-            <Services />
+        <div id='Services'></div>
+        <Toolbar />
+        <Toolbar />
+        <Services />
 
-            <div id='Contact'></div>
-            <Toolbar />
-            <Toolbar />
-            <Contact />
+        <div id='Contact'></div>
+        <Toolbar />
+        <Toolbar />
+        <Contact />
 
-            <Toolbar />
-            <FloatingActionButton />
-        </React.Fragment>
-    )
-}
+        <Toolbar />
+        <FloatingActionButton />
+    </React.Fragment>
 
 export default Main

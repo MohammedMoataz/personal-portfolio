@@ -5,9 +5,7 @@ export const ColorButton = styled(Button)(() => ({
     color: '#FAFAFA',
     backgroundColor: '#40718D',
     fontWeight: 700,
-    '&:hover': {
-        backgroundColor: '#368F80',
-    },
+    '&:hover': { backgroundColor: '#368F80' },
 }))
 
 export const ColorBorderButton = styled(Button)(() => ({

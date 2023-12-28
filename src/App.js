@@ -26,9 +26,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => { setPreloading(false) }, 2000)
 
-    Aos.init({
-      duration: 1000,
-    })
+    Aos.init({ duration: 1000 })
   }, [])
 
   return <AppProvider>

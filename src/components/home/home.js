@@ -10,12 +10,12 @@ import { ColorBorderButton } from './../../utils/button.js'
 import CustomButtonBase from '../../utils/buttonbase.js'
 import CustomizedMenus from '../../utils/dropdown.js'
 
+import img from "./../../assets/webp/mohammed.webp"
 import gmailLottie from './../../assets/lotties/gmail.json'
 import linkedinLottie from './../../assets/lotties/linkedin.json'
 import facebookLottie from './../../assets/lotties/facebook.json'
 import githubLottie from './../../assets/lotties/github.json'
 import telegramLottie from './../../assets/lotties/telegram.json'
-import img from "./../../assets/webp/mohammed.webp"
 import data from '../../data/portfolio.json'
 
 const Home = () => {

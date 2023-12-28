@@ -11,8 +11,9 @@ import { AppContext } from './../../context/context/context.js'
 import { ColorButton } from './../../utils/button.js'
 import Textarea from './../../utils/teaxtarea.js'
 import CustomTextField from '../../utils/textfield.js'
-import data from '../../data/contact.json'
+
 import contactLottie from './../../assets/lotties/contact.json'
+import data from '../../data/contact.json'
 
 const Contact = () => {
     const { state } = useContext(AppContext)
