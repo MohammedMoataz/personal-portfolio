@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 import {
   Route,
   BrowserRouter as Router,
-  Routes
+  Routes,
+  Navigate
 } from "react-router-dom"
 import {
   Box,
@@ -26,6 +27,12 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => { setPreloading(false) }, 2000)
 
+    console.log("%c MOHAMMED MOATAZ PORTFOLIO",
+      `color:#368F80;
+      font-size:100px;
+      font-weight:bold;
+      font-family: Calibri;`)
+
     Aos.init({ duration: 1000 })
   }, [])
 
@@ -41,6 +48,8 @@ const App = () => {
               <Routes>
                 <Route exact path='/' element={<Main />} />
                 <Route exact path='/projects' element={<Projects />} />
+
+                <Route path="*" element={<Navigate replace to="/" />} />
               </Routes>
             </Container>
             <Footer />

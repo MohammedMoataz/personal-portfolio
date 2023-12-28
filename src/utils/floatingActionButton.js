@@ -15,7 +15,7 @@ const FloatingActionButton = () => {
     window.addEventListener('scroll', toggleVisible)
 
     return <Fab
-        aria-label="chat"
+        aria-label="Up"
         sx={{
             position: "fixed",
             bottom: { xs: 80, sm: 50 },

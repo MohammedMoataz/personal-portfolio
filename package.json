@@ -20,8 +20,7 @@
     "react-fast-marquee": "1.6.2",
     "react-lottie": "1.2.3",
     "react-router-dom": "^6.21.1",
-    "react-scripts": "5.0.1",
-    "swiper": "^11.0.5"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
