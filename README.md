@@ -1,3 +1,3 @@
 # Mohammed Moataz Portfolio
 
-![Portfolio](https://github.com/MohammedMoataz/personal-portfolio/assets/81831838/4e48869a-4683-43af-ae03-8977e38adabf)
+![Mohammed Moataz Portfolio](https://github.com/MohammedMoataz/personal-portfolio/assets/81831838/e6599438-8519-4614-9b36-ba1cfcad2101)
